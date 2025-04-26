@@ -6,6 +6,6 @@
 ###### !!! The RTL Code is programed by me(Marco) , any problem can mail "harry2963753@gmail.com". 
 
 #### Course Content :
-| Lab | 題目 |
+| Lab | Design |
 |:---:|:----:|
 |Lab01|Chinese Course|
