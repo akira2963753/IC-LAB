@@ -3,7 +3,7 @@
 signed / unsigned 可以擴充一個bit作為sign bit下去做  
 記得因為已經考慮到signed / unsiged 的關係   
 所有需要用到計算的reg都必須要宣告為signed  
-需要計算好要宣告的reg到底最大要用多少bit的空間  
+宣告的reg到底最大要用多少bit的空間要計算好  
 並且必須要多一個bit來作為sign bit  
 至於恆為正數的a跟b，則是用$signed()搭配Extend High 0 bit    
 
