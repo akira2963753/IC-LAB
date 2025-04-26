@@ -8,4 +8,4 @@
 #### Course Content :
 | Lab | Design |
 |:---:|:----:|
-|Lab01|Chinese Course|
+|[Lab01](./Lab01)|Chinese Course|
