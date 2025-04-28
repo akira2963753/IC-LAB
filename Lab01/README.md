@@ -16,9 +16,10 @@ Sort的部分使用的是最簡單的Bubble Sort
 
 Code View  
 -
-###### 定義 I/O :  
+##### 定義 I/O :  
 <img width="489" alt="{EC9F9393-7215-4AB7-9A21-83257A52FD6B}" src="https://github.com/user-attachments/assets/bbf50b0e-e14a-4b94-84b5-798d6e84286b" />  
-###### 宣告 Net and Register :    
+
+##### 宣告 Net and Register :    
 ! 記得要多開一個bit的空間讓放sign bit    
 <img width="502" alt="{5526270F-036B-4885-A1D0-7BFBA3E7C0CB}" src="https://github.com/user-attachments/assets/e5a8016d-8408-49b1-ade5-e67a74f3ada7" />  
 ##### Signed / Unsigned :    
