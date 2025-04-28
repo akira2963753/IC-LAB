@@ -1,6 +1,6 @@
 ## Lab01 筆記
 
-signed / unsigned 可以擴充一個bit作為sign bit下去做  
+Signed / Unsigned 可以擴充一個bit作為sign bit下去做  
 記得因為已經考慮到signed / unsiged 的關係   
 所有需要用到計算的reg都必須要宣告為signed  
 宣告的reg到底最大要用多少bit的空間要計算好  
@@ -13,3 +13,7 @@ Sort的部分使用的是最簡單的Bubble Sort
 
 最後也是成功完成100000個 Pattern 的 Test  
 <img width="355" alt="{9AB175FC-72EB-4582-861E-6ECE798DE460}" src="https://github.com/user-attachments/assets/05ce31c0-01a2-4bbd-805e-1b0890378e06" />
+
+Code View  
+-
+
