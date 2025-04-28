@@ -8,4 +8,4 @@
 #### Course Contents :
 | Lab | Design | Code View and Note  |
 |:---:|:----:|:----:|
-|[Lab01](./Lab01)|Chinese Course|[Lab01](./README)|
+|[Lab01](./Lab01)|Chinese Course|[Note&CodeView](./Lab01/README.md)|
