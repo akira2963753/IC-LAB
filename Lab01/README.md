@@ -32,7 +32,8 @@ Code View
 ##### Sort :  
 ###### 這邊是用Bubble Sort的概念  
 ###### 直接處理值的排列跟Student ID的排列  
-<img width="8" alt="{DC4330C6-39B2-4659-8B35-2FC59E87156E}" src="https://github.com/user-attachments/assets/da3be91b-cee7-4654-ad11-52640806ab0a" />  
+<img width="460" alt="{67C9EEC5-8800-483F-B790-0652501DB3B7}" src="https://github.com/user-attachments/assets/c0c9ba49-64eb-4599-b633-76e9e8bf7f4a" />  
+
 
 ##### Linear-Transition and Calculate :  
 ###### 這裡就是照"Lab01_Exercise"中的公式做設計  
