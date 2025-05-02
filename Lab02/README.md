@@ -1,6 +1,7 @@
 ##### 這題的想法是用DFS下去做SCAN，如果有找到的話就往下，沒有的話就回朔到前一個找另解，以此循環把解找出。  
 ##### 然後利用四種Mask來判斷可不可以放，col_mask(行)、row_mask(列)、diag_mask(↘)、adiag_mask(↙)。  
-##### col_mask and row_mask 很好理解，而判斷↘↙的則是使用以下方法 :   
+##### col_mask and row_mask 很好理解，而判斷↘↙的則是使用以下方法 :  
+##### 12x12宮格可以取得24條
 <img width="340" alt="{67EA3217-4E04-428A-9832-0A3A3FE0ADDA}" src="https://github.com/user-attachments/assets/6d017a58-ec11-4891-94c5-470bc8dc5d76" />  
 
 
