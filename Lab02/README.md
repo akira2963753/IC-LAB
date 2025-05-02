@@ -5,8 +5,8 @@
 ##### col_mask and row_mask 很好理解，而判斷↘↙的則是使用以下方法 :  
 
 
-![ChatGPT Image 2025年5月3日 上午01_03_46](https://github.com/user-attachments/assets/11a50dff-ae27-4fdc-88e5-2a10e6249e57)  
 
+<img width="569" alt="{6174C805-E9AA-44DF-B473-AC2452C5C4D}" src="https://github.com/user-attachments/assets/6ee0426d-3a4d-4aad-9930-f2a9156e8efd" />
 
 
 <img width="569" alt="{6174C805-E9AA-44DF-B473-AC2452C5C4D7}" src="https://github.com/user-attachments/assets/b580ffde-c13e-4335-8d47-6ce94007269c" />
