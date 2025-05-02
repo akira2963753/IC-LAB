@@ -1,4 +1,4 @@
-## Lab01 筆記
+## Lab01 解題思路
 
 Signed / Unsigned 可以擴充一個bit作為sign bit下去做  
 記得因為已經考慮到signed / unsiged 的關係   
