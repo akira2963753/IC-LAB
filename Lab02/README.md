@@ -5,7 +5,7 @@
 ##### col_mask and row_mask 很好理解，而判斷↘↙的則是使用以下方法 :  
 
 
-![ChatGPT Image 2025年5月3日 上午01_03_46](https://github.com/user-attachments/assets/3e77b38f-6ba1-4621-9bd1-6ea5160ac035)  
+![ChatGPT Image 2025年5月3日 上午01_03_46](https://github.com/user-attachments/assets/11a50dff-ae27-4fdc-88e5-2a10e6249e57)  
 
 
 
