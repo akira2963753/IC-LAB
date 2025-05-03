@@ -13,5 +13,7 @@
 > ##### (這樣才不會重複使用相同解)
 > ##### 以此類推，經過多次計算後，找到整體來說最淺的解。  
 ##### 依此概念下去寫RTL，即可完成並通過Test Pattern。   
-<img width="569" alt="{6174C805-E9AA-44DF-B473-AC2452C5C4D7}" src="https://github.com/user-attachments/assets/b580ffde-c13e-4335-8d47-6ce94007269c" />  
+<img width="569" alt="{6174C805-E9AA-44DF-B473-AC2452C5C4D7}" src="https://github.com/user-attachments/assets/b580ffde-c13e-4335-8d47-6ce94007269c" />
 
+Code View   
+- 
