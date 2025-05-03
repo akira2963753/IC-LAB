@@ -70,19 +70,19 @@ assign bk_diag = {1'b0,bk_row} - {1'b0,bk_col} + 5'd11;
 ```
 #### 建立FSM  
 ``` Verilog
-    always @(posedge clk or negedge rst_n) begin
-        if(!rst_n) state <= IDLE;
-        else state <= next_state;
-    end
+always @(posedge clk or negedge rst_n) begin
+    if(!rst_n) state <= IDLE;
+    else state <= next_state;
+end
 
-    always @(*) begin
-        case(state)
-            IDLE : next_state = (in_valid&&in_valid_num)? READ : IDLE;
-            READ : next_state = (cnt==num_temp)? CAL : READ;
-            CAL : next_state = (col_cnt==4'd12)? OUT : CAL;
-            OUT : next_state = (oidx==4'd11)? IDLE : OUT;
-        endcase
-    end
+always @(*) begin
+    case(state)
+        IDLE : next_state = (in_valid&&in_valid_num)? READ : IDLE;
+        READ : next_state = (cnt==num_temp)? CAL : READ;
+        CAL : next_state = (col_cnt==4'd12)? OUT : CAL;
+        OUT : next_state = (oidx==4'd11)? IDLE : OUT;
+    endcase
+end
 
 ```
 
