@@ -16,9 +16,31 @@
 <img width="569" alt="{6174C805-E9AA-44DF-B473-AC2452C5C4D7}" src="https://github.com/user-attachments/assets/b580ffde-c13e-4335-8d47-6ce94007269c" />
 
 ## Code View   
-#### 宣告Parameter、Register and Net  
-<img width="552" alt="{B346DF46-71AE-4762-96C5-56C76FBFC734}" src="https://github.com/user-attachments/assets/40146b21-631d-4c58-91f6-635d8f212741" />
+#### 宣告Parameter、Register and Net    
+``` Verilog
+parameter IDLE = 2'd0,READ = 2'd1,CAL = 2'd2,OUT = 2'd3;
+integer i;
 
+reg [1:0] state,next_state;
+reg [2:0] cnt;
+reg [2:0] num_temp;
+reg [3:0] chessboard[0:11];
+reg [11:0] col_mask;
+reg [11:0] row_mask;
+reg [22:0] diag_mask;
+reg [22:0] adiag_mask;
+reg [3:0] col_cnt;
+reg [3:0] row_cnt;
+reg [3:0] oidx;
+reg [3:0] stack[0:11];
+reg [3:0] sp;
+reg [11:0] record_mask; 
+    
+wire [4:0] diag_cnt,adiag_cnt;
+wire [4:0] diag,adiag;
+wire [3:0] bk_col,bk_row;
+wire [4:0] bk_diag,bk_adiag;
+```    
 #### Assignment  
 ###### 注意在這邊要把4個bit的row、col Extend 1bit 再做加法，avoid overflow。
 ###### Index 盡量能用Net來表示比較好，增加易讀性也可以減少錯誤率。
@@ -36,6 +58,6 @@ assign bk_diag = {1'b0,bk_row} - {1'b0,bk_col} + 5'd11; // get previous diag
 assign bk_adiag = bk_row + bk_col; // get previous adiag  
 ```
 
-<img width="542" alt="{AFAB49B6-3761-4D2C-A547-9821BBCD70E9}" src="https://github.com/user-attachments/assets/ec274f76-77e5-4705-a399-d8e4bc6c6b22" />
+
 
 
