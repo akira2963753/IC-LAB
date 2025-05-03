@@ -178,6 +178,27 @@ end
         end
     end
 ```
+#### 輸出結果!!  
+``` Verilog
+    always @(posedge clk or negedge rst_n) begin
+        if(!rst_n) begin
+            out <= 4'd0;
+            oidx <= 4'd0;
+            out_valid <= 1'b0;
+        end 
+        else if(state==OUT) begin
+            out_valid <= 1'b1;
+            out <= chessboard[oidx];
+            oidx <= oidx + 4'd1;
+        end 
+        else begin
+            out <= 4'd0;
+            out_valid <= 1'b0;
+            oidx <= 4'd0;
+        end
+    end
+
+``` 
 
 
 
