@@ -16,4 +16,6 @@
 <img width="569" alt="{6174C805-E9AA-44DF-B473-AC2452C5C4D7}" src="https://github.com/user-attachments/assets/b580ffde-c13e-4335-8d47-6ce94007269c" />
 
 ## Code View   
-- 
+##### 宣告Parameter、Register and Net  
+<img width="552" alt="{B346DF46-71AE-4762-96C5-56C76FBFC734}" src="https://github.com/user-attachments/assets/40146b21-631d-4c58-91f6-635d8f212741" />
+
