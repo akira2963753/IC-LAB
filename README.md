@@ -9,4 +9,4 @@
 | Lab | Design | Code View and Note  | Execution Cycle | Area | 
 |:---:|:----:|:----:|:----:|:----:|
 |[Lab01](./Lab01)|Chinese Course|[Note / Code View](./Lab01/README.md)| - | |
-|[Lab02](./Lab02)|Queen|[Note / Code View](./Lab02/README.md)|393567| |
+|[Lab02](./Lab02)|12x12 N-Queen|[Note / Code View](./Lab02/README.md)|393567| |
