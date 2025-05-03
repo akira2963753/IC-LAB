@@ -1,4 +1,4 @@
-### 12×12 N‑Queen
+## 12×12 N‑Queen
 ##### 這題的核心想法是用DFS下去做SCAN，如果有找到的話就往下，沒有的話就回朔到前一個找另解，以此循環把解找出。  
 ##### 然後利用四種Mask來判斷可不可以放，col_mask(行)、row_mask(列)、diag_mask(↘︎)、adiag_mask(↙︎)。  
 ##### col_mask 與 row_mask 很好理解，而判斷↘︎↙︎的則是使用以下方法 :  
