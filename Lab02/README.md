@@ -85,6 +85,20 @@ always @(*) begin
 end
 
 ```
+#### 建立一開始輸入的Counter與n_temp  
+``` Verilog
+// Set the counter ----------------------------------------------------------------
+always @(posedge clk) begin
+    if((state==IDLE&&in_valid_num)||state==READ) cnt <= cnt + 3'd1;
+    else cnt <= 3'd0;
+end
+
+// Set the temp for in_num --------------------------------------------------------
+always @(posedge clk) begin
+    if(state==IDLE&&in_valid_num) num_temp <= in_num - 3'd1;
+    else;
+end
+```   
 
 
 
