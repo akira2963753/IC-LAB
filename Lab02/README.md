@@ -27,7 +27,15 @@
 assign diag = {1'b0,row} - {1'b0,col} + 5'd11;
 assign diag_cnt = {1'b0,row_cnt} - {1'b0,col_cnt} + 5'd11;
 assign bk_diag = {1'b0,bk_row} - {1'b0,bk_col} + 5'd11;
-``` 
+```
+###### 而這四個mask是在處理回朔到前一個處理的col、row、diag、adiag  
+``` Verilog
+assign bk_col = stack[sp-4'd1]; // pop previous col 
+assign bk_row = chessboard[bk_col]; // get previous row 
+assign bk_diag = {1'b0,bk_row} - {1'b0,bk_col} + 5'd11; // get previous diag
+assign bk_adiag = bk_row + bk_col; // get previous adiag  
+```
+
 <img width="542" alt="{AFAB49B6-3761-4D2C-A547-9821BBCD70E9}" src="https://github.com/user-attachments/assets/ec274f76-77e5-4705-a399-d8e4bc6c6b22" />
 
 
