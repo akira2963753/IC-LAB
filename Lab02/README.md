@@ -86,7 +86,7 @@ end
 
 ```
 #### 建立一開始輸入的counter and n_temp
-##### 為什麼需要n_temp : 因為n只會輸入一個clk，所以用n_temp把n存下來，好讓我判斷counter算到什麼時候要轉態 
+###### 為什麼需要n_temp : 因為n只會輸入一個clk，所以用n_temp把n存下來，好讓我判斷counter算到什麼時候要轉態 
 ``` Verilog
 // Set the counter ----------------------------------------------------------------
 always @(posedge clk) begin
