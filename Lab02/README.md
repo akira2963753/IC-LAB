@@ -41,7 +41,17 @@ wire [4:0] diag,adiag;
 wire [3:0] bk_col,bk_row;
 wire [4:0] bk_diag,bk_adiag;
 ```    
-#### Assignment  
+#### Assignment 
+###### 這兩個是處理預先放入Queen的diag和adiag計算  
+``` Verilog
+assign diag = {1'b0,row} - {1'b0,col} + 5'd11;
+assign adiag = row + col;
+```
+###### 這兩個是處理計算好要放入的Queen的diag和adiag計算      
+``` Verilog
+assign diag_cnt = {1'b0,row_cnt} - {1'b0,col_cnt} + 5'd11;
+assign adiag_cnt = row_cnt + col_cnt;
+```  
 ###### 注意在這邊要把4個bit的row、col Extend 1bit 再做加法，avoid overflow。
 ###### Index 盡量能用Net來表示比較好，增加易讀性也可以減少錯誤率。
 
