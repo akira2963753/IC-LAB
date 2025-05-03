@@ -19,9 +19,12 @@
 ##### 宣告Parameter、Register and Net  
 <img width="552" alt="{B346DF46-71AE-4762-96C5-56C76FBFC734}" src="https://github.com/user-attachments/assets/40146b21-631d-4c58-91f6-635d8f212741" />
 
-##### 注意在這邊要把4個bit的row、col先Extend 1bit 在做加法，Avoid overflow。  
+##### 注意在這邊要把4個bit的row、col Extend 1bit 再做加法，avoid overflow。
+##### Index 盡量能用Net來表示比較好，增加易讀性也可以減少錯誤率。  
 ``` Verilog 
-diag = {1'b0,row} - {1'b0,col} + 5'd11;
+assign diag = {1'b0,row} - {1'b0,col} + 5'd11;
+assign diag_cnt = {1'b0,row_cnt} - {1'b0,col_cnt} + 5'd11;
+assign bk_diag = {1'b0,bk_row} - {1'b0,bk_col} + 5'd11;
 ``` 
 <img width="542" alt="{AFAB49B6-3761-4D2C-A547-9821BBCD70E9}" src="https://github.com/user-attachments/assets/ec274f76-77e5-4705-a399-d8e4bc6c6b22" />
 
